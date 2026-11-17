@@ -1,5 +1,54 @@
 /* Estilos sencillos para el portafolio de Edilberto */
-:root {
+.navbar {
+    background-color: #eed9c1;
+    max-width: auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 24px 32px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.menuPrincipal {
+    color: #243047;
+}
+
+footer {
+    background-color: #eed9c1;
+    color: #243047;
+    text-align: center;
+    padding: 16px 0;
+}
+
+body {
+    background-color: #FFF8EC;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    box-sizing: border-box;
+    padding: 0 28px;
+    background: #D42A12;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.sobreMi {
+    background-color: #403d39;
+}
+
+h1{
+    
+}
+/*:root {
     color-scheme: light;
     --fondo: #f4f1e8;
     --superficie: #ffffff;
@@ -20,20 +69,19 @@ html {
 
 body {
     margin: 0;
-    background: var(--fondo);
-    color: var(--texto);
+    background-color: #F7F6F1;
     font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
     line-height: 1.7;
+    background-color: #D8B47B;
 }
 
 header {
     padding: 1rem 1.5rem;
-    background: var(--superficie);
-    border-bottom: 1px solid var(--borde);
+    background: #57451d border-bottom: 1px solid var(--borde);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 10rem;
 }
 
 header h1 {
@@ -43,7 +91,7 @@ header h1 {
 }
 
 nav {
-    display: flex;
+    background-color: #172A27 display: flex;
     flex-wrap: wrap;
     gap: .5rem 1.25rem;
 }
@@ -106,7 +154,7 @@ section {
     color: var(--texto-suave);
 }
 
-#inicio > a {
+#inicio>a {
     display: inline-block;
     padding: .7rem 1.1rem;
     color: #fff;
@@ -114,7 +162,7 @@ section {
     border-radius: 8px;
 }
 
-#inicio > a:hover {
+#inicio>a:hover {
     background: var(--acento-hover);
     text-decoration: none;
 }
@@ -134,7 +182,7 @@ ul {
     padding-left: 1.3rem;
 }
 
-li + li {
+li+li {
     margin-top: .45rem;
 }
 
@@ -145,7 +193,7 @@ article {
     border-radius: 10px;
 }
 
-article + article {
+article+article {
     margin-top: 1rem;
 }
 
@@ -157,6 +205,11 @@ article h3 {
     header {
         align-items: flex-start;
         flex-direction: column;
+
+        img {
+            width: 150px;
+            height: 100px;
+        }
     }
 
     nav {
@@ -172,4 +225,4 @@ article h3 {
         margin: .75rem 0;
         border-radius: 10px;
     }
-}
+} */

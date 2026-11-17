@@ -1,124 +1,253 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" style="scroll-padding-top: 80px;">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edilberto | Portafolio</title>
 
-    <title>Mi portafolio | Desarrollador en formación</title>
-
+    <!-- CSS de Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
     <header>
-        <h1>Mi portafolio</h1>
+        <nav id="navbar" class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark">
 
-        <nav>
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
+            <div class="container">
+
+                <a class="navbar-brand" href="#inicio">
+                    <img src="img/LogoEdilDev.png" width="130" class="img-fluid" alt="Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                    aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link menuPrincipal" href="#sobre-mi">Sobre mí</a>
+                        <a class="nav-link menuPrincipal" href="#habilidades">Habilidades</a>
+                        <a class="nav-link menuPrincipal" href="#proyectos">Proyectos</a>
+                        <a class="nav-link menuPrincipal" href="#contacto">Contacto</a>
+                    </div>
+                </div>
+
+            </div>
         </nav>
     </header>
 
     <main>
 
-        <section id="inicio">
-            <h2>¡Hola! Soy Edilberto</h2>
-            <img src="6c55d49dd6839b5b79e84a1aa6d2260d.jpg" style="width: 200px; height: 200px;"alt="Foto">
+        <section id="inicio" class="bg-light py-5 text-center">
+            <div class="container">
+                <h2 class="display-5 fw-bold">¡Hola! Soy Edilberto</h2>
 
-            <h3>Desarrollador en formación</h3>
+                <!-- Pon aquí la ruta de tu foto en src -->
+                <img src="img/foto.jpg" class="rounded-circle border border-3 border-primary my-4"
+                    style="width: 200px; height: 200px; object-fit: cover;" alt="Foto de Edilberto">
 
-            <p>
-                Estoy comenzando mi camino en el mundo del desarrollo
-                y aprendiendo a crear páginas web y soluciones mediante código.
-            </p>
+                <h1 class="display-4 fw-bold" style="color: #2b1919;">Desarrollador en formación</h1>
 
-            <a href="#proyectos">Conoce mis proyectos</a>
-        </section>
-
-        <!-- Sobre mí -->
-        <section id="sobre-mi">
-            <h2>Sobre mí</h2>
-
-            <p>
-                Soy una persona interesada en la tecnología y el desarrollo
-                de software. Actualmente estoy aprendiendo programación
-                y desarrollando mis primeros proyectos personales para
-                mejorar mis habilidades.
-            </p>
-        </section>
-
-        <section id="habilidades">
-            <h2>Mis habilidades</h2>
-
-            <ul>
-                <li>HTML: aprendiendo a crear estructuras web.</li>
-                <li>CSS: aprendiendo a diseñar páginas web.</li>
-                <li>JavaScript: en proceso de aprendizaje.</li>
-                <li>Git y GitHub: conociendo herramientas de desarrollo.</li>
-            </ul>
-        </section>
-
-        <section id="proyectos">
-            <h2>Mis proyectos</h2>
-
-            <article>
-                <a href="https://edilbertojusayu20.github.io/hoja_de_vida/" target="_blank">Hoja de vida</a>
-
-                <p> 
-                    Este es mi primer proyecto personal.
-                    Una página web creada para practicar HTML
-                    y aprender cómo se estructura un sitio web.
+                <p class="lead mx-auto" style="max-width: 600px;">
+                    Estoy comenzando mi camino en el mundo del desarrollo
+                    y aprendiendo a crear páginas web y soluciones mediante código.
                 </p>
 
-                <p><strong>Tecnologías:</strong> HTML.</p>
-            </article>
-            <article>
-                <a href="https://edilbertojusayu20.github.io/conferencistas/" target="_blank">Conferencistas</a>
-
-                <p>
-                    Se replica la sección de una página 
-                    web para un evento donde se presente a un grupo de expertos 
-                    y se le permita a los asistentes verificar su entrada.
-                </p>
-                <p><strong>Tecnologías:</strong>HTML</p>
-            
-            </article>
-            <article>
-                <h3>Próximo proyecto</h3>
-
-                <p>
-                    Aquí agregaré otro proyecto cuando termine
-                    de desarrollar una nueva aplicación.
-                </p>
-            </article>
+                <a href="#proyectos" class="btn btn-lg"
+                    style="background: #D42A12; color: #FFFFFF; font-family: 'Space Grotesk', system-ui, sans-serif;">Conoce
+                    mis proyectos</a>
+            </div>
         </section>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
+        <section id="sobre-mi" class="py-5" style="background-color: #403d39; color: #fff;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8 text-center">
+                        <h2 class="mb-4">Sobre mí</h2>
+                        <p class="fs-5 ">
+                            Soy una persona interesada en la tecnología y el desarrollo
+                            de software. Actualmente estoy aprendiendo programación
+                            y desarrollando mis primeros proyectos personales para
+                            mejorar mis habilidades.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <p>
-                Puedes conocer mi trabajo o comunicarte conmigo
-                mediante los siguientes enlaces.
-            </p>
+        <section id="habilidades" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Mis habilidades</h2>
 
-            <a href="https://github.com/edilbertojusayu20/" target="_blank" rel="noopener noreferrer">
-                Mi GitHub
-            </a>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <ul class="list-group shadow-sm">
+                            <li class="list-group-item"><strong>HTML:</strong> aprendiendo a crear estructuras web.</li>
+                            <li class="list-group-item"><strong>CSS:</strong> aprendiendo a diseñar páginas web.</li>
+                            <li class="list-group-item"><strong>JavaScript:</strong> en proceso de aprendizaje.</li>
+                            <li class="list-group-item"><strong>Git y GitHub:</strong> conociendo herramientas de
+                                desarrollo.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <p>
-                Correo:
-                <a href="edilbertojusayu20@gmail.com">
-                    edilbertojusayu20@gmail.com
-                </a>
-            </p>
+        <section id="proyectos" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Mis proyectos</h2>
+
+                <div class="row g-4">
+
+                    <!-- Proyecto 1 -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/plan-estudios_318-450505.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hoja de Vida</h5>
+                            <p class="card-text">Este es mi primer proyecto personal.
+                                    Una página web creada para practicar HTML
+                                    y aprender cómo se estructura un sitio web..</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+
+ <div class="col-12 col-md-6 col-lg-3">
+                        <article class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title h5">
+                                    <a href="https://edilbertojusayu20.github.io/hoja_de_vida/" target="_blank"
+                                        rel="noopener noreferrer">Hoja de vida</a>
+                                </h3>
+                                <p class="card-text">
+                                    
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <strong>Tecnologías:</strong>
+                                <span class="badge text-bg-primary">HTML</span>
+                            </div>
+                        </article>
+                    </div>
+                    
+
+                    <!-- Proyecto 2 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <article class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title h5">
+                                    <a href="https://edilbertojusayu20.github.io/conferencistas/" target="_blank"
+                                        rel="noopener noreferrer">Conferencistas</a>
+                                </h3>
+                                <p class="card-text">
+                                    Se replica la sección de una página
+                                    web para un evento donde se presente a un grupo de expertos
+                                    y se le permita a los asistentes verificar su entrada.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <strong>Tecnologías:</strong>
+                                <span class="badge text-bg-primary">HTML</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Proyecto 3 -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <article class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title h5">
+                                    <a href="https://edilbertojusayu20.github.io/Rueda_libre_def/" target="_blank"
+                                        rel="noopener noreferrer">Rueda Libre</a>
+                                </h3>
+                                <p class="card-text">
+                                    Se trata de un sitio web donde se puede realizar alquiler de bicicletas en Medellín
+                                    y se puede conocer la información de cada una de ellas, así mismo integrando rutas
+                                    para movilizarse en la ciudad.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <strong>Tecnologías:</strong>
+                                <span class="badge text-bg-primary">HTML</span>
+                                <span class="badge text-bg-success">CSS</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <article class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title h5">
+                                    <a href="https://edilbertojusayu20.github.io/hamburguesa/" target="_blank"
+                                        rel="noopener noreferrer">Menú hamburguesas</a>
+                                </h3>
+                                <p class="card-text">
+                                    La idea principal de la elaboracion de esta pagina, es de apicar y entender el
+                                    funcionamiento de las tarjetas usando estilos de bootstrap, y de esta manera poder
+                                    crear un menu de hamburguesas, con sus respectivos precios y descripcion de cada una
+                                    de ellas.
+                                </p>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <strong>Tecnologías:</strong>
+                                <span class="badge text-bg-primary">HTML</span>
+                                <span class="badge text-bg-success">BOOTSTRAP</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <article class="card h-100 border-secondary border-dashed bg-light">
+                            <div class="card-body text-center text-secondary">
+                                <h3 class="card-title h5">Próximo proyecto</h3>
+                                <p class="card-text">
+                                    Aquí agregaré otro proyecto cuando termine
+                                    de desarrollar una nueva aplicación.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="bg-light py-5">
+            <div class="container text-center">
+                <h2 class="mb-3">Contacto</h2>
+
+                <p class="text-secondary">
+                    Puedes conocer mi trabajo o comunicarte conmigo
+                    mediante los siguientes enlaces.
+                </p>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                    <a href="https://github.com/edilbertojusayu20/" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-dark">
+                        Mi GitHub
+                    </a>
+
+                    <a href="mailto:edilbertojusayu20@gmail.com" class="btn btn-outline-primary">
+                        edilbertojusayu20@gmail.com
+                    </a>
+                </div>
+            </div>
         </section>
 
     </main>
-    
 
+    <footer class=text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">© 2026 Edilberto | Desarrollador en formación</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
+</html>
+
 </html>
